@@ -36,10 +36,11 @@ python generate_mcbench_prompts.py \
   --idea "cyberpunk neon market" --temp 1
 ```
 # CLI flags
-Flag	Default	Purpose
-
-## --idea, -i	(ask)	Seed topic the model must echo in 3+ prompts.
-## --temp, -t	1	Sampling temperature for the o3 completion. o series from OpenAI *need* temp=1.
+| Flag        | Short | Default                | Description                                                                                   |
+|-------------|-------|------------------------|-----------------------------------------------------------------------------------------------|
+| `--idea`    | `-i`  | *(ask interactively)*  | Seed topic that the model must weave into at least **three** prompts, each with a different tag. |
+| `--temp`    | `-t`  | `1`                    | Sampling temperature for the OpenAI **o3** model (higher ⇒ more variety, lower ⇒ more repeatable) *needs* to be =1 for o series models from OpenAI. |
+| `--help`    | `-h`  | —                      | Display built-in argparse usage information and exit.                                          |
 
 # Example output
 ```bash
