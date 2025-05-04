@@ -37,8 +37,9 @@ python generate_mcbench_prompts.py \
 ```
 # CLI flags
 Flag	Default	Purpose
---idea, -i	(ask)	Seed topic the model must echo in 3+ prompts.
---temp, -t	1	Sampling temperature for the o3 completion. o series from OpenAI *need* temp=1.
+
+## --idea, -i	(ask)	Seed topic the model must echo in 3+ prompts.
+## --temp, -t	1	Sampling temperature for the o3 completion. o series from OpenAI *need* temp=1.
 
 # Example output
 ```bash
